@@ -22,11 +22,12 @@ POSTS_URL = (
 
 # ---------- LOAD POSTS (READ ONLY) ----------
 
+
 def load_posts():
     response = requests.get(
         POSTS_URL,
-        headers={"Cache-Control": "no-cache"},
-        timeout=15,
+        params={"refresh": time.time_ns()},
+        timeout=20,
     )
     response.raise_for_status()
 
@@ -36,8 +37,7 @@ def load_posts():
         raise ValueError("posts.json must contain a list.")
 
     return posts
-
-
+st.write("DEBUG — Posts loaded:", len(posts))
 
 # ---------- WEBSITE HEADER ----------
 
