@@ -142,8 +142,36 @@ st.markdown("---")
 
 st.markdown(
     """
-    <div style="text-align:center; color:gray;">
-        Made with 💙 and Python · Lazy Developer
+    <div style="
+        text-align: center;
+        padding: 18px 0 10px 0;
+        font-family: sans-serif;
+    ">
+        <div style="
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: #8A94A6;
+            margin-bottom: 10px;
+        ">
+            WORK SMARTER, NOT HARDER
+        </div>
+
+        <div style="
+            font-size: 19px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: #5B8DEF;
+        ">
+            ♡ Lazy Developer
+        </div>
+
+        <div style="
+            font-size: 11px;
+            color: #9CA3AF;
+            margin-top: 10px;
+        ">
+            made with curiosity & a little ☕
+        </div>
     </div>
     """,
     unsafe_allow_html=True,
