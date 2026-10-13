@@ -1,21 +1,23 @@
 [
   {
     "id": "fafcd44f-be5d-48f2-91ff-43a798fdb5c7",
-    "title": "Test",
+    "title": "Test2",
     "category": "React",
-    "content": "test",
+    "content": "test2",
     "date": "2026-10-13"
   },
   {
     "title": "Understanding Python Syntax and Basics",
     "category": "Python",
     "content": "1. Indentation:\nPython uses indentation (spaces or tabs) to define blocks of code.\n2. Whitespace:\nPython is sensitive to whitespace. Ensure consistent indentation to avoid errors. Ideally, use 4 spaces for indentation.\n3. Statements:\nEach line of code is a statement. You can write multiple statements on one line using a semicolon (; ), but this is not recommended.\n4. Comments: \n- Use  # for single-line comments.\n- Use  ''' or  \"\"\" for multi-line comments.",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "id": "62b8d45f-b5a9-49c4-8d1d-0a67829b0294"
   },
   {
     "title": "Introduction to Python and Programming",
     "category": "Python",
     "content": "What is Programming?\nProgramming is the process of giving instructions to a computer to perform\nspecific tasks. It involves writing code in a programming language that the\ncomputer can understand and execute.\nWhy Python?\n1. \n2. \n3. \n4. \n5. \n6. \n7. \nPython is a high-level, interpreted programming language known for its\nsimplicity and readability.\nIt is widely used in:\nWeb Development (Django, Flask)\nData Science and Machine Learning (Pandas, NumPy, TensorFlow)\nAutomation and Scripting\nGame Development (Pygame)\nPython has a large community and extensive libraries, making it\nbeginner-friendly",
-    "date": "2026-10-13"
+    "date": "2026-10-13",
+    "id": "2ad85d49-0458-48b0-a6c3-c95433ba8636"
   }
 ]
