@@ -1,5 +1,5 @@
+import base64
 import json
-import time
 import requests
 import streamlit as st
 
@@ -14,29 +14,42 @@ st.set_page_config(
 
 # ---------- GITHUB PUBLIC POSTS URL ----------
 
-POSTS_URL = (
-    "https://raw.githubusercontent.com/"
-    "Roopampanchal/lazy-developer/main/posts.json"
+GITHUB_API_URL = (
+    "https://api.github.com/repos/"
+    "Roopampanchal/lazy-developer/contents/posts.json"
 )
 
 
 # ---------- LOAD POSTS (READ ONLY) ----------
 
-
+@st.cache_data(ttl=10)
 def load_posts():
     response = requests.get(
-        POSTS_URL,
-        params={"refresh": time.time_ns()},
-        timeout=20,
+        GITHUB_API_URL,
+        params={"ref": "main"},
+        headers={
+            "Accept": "application/vnd.github+json",
+            "Cache-Control": "no-cache",
+        },
+        timeout=15,
     )
     response.raise_for_status()
 
-    posts = response.json()
+    file_data = response.json()
+
+    content = base64.b64decode(
+        file_data["content"]
+    ).decode("utf-8")
+
+    posts = json.loads(content)
 
     if not isinstance(posts, list):
-        raise ValueError("posts.json must contain a list.")
+        raise ValueError(
+            "posts.json must contain a list of posts."
+        )
 
     return posts
+
 
 # ---------- WEBSITE HEADER ----------
 
