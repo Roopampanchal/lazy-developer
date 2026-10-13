@@ -138,6 +138,7 @@ except (ValueError, json.JSONDecodeError):
 
 # ---------- FOOTER ----------
 
+
 st.markdown("---")
 
 st.markdown(
