@@ -139,40 +139,23 @@ except (ValueError, json.JSONDecodeError):
 # ---------- FOOTER ----------
 
 
+
 st.markdown("---")
 
 st.markdown(
     """
-    <div style="
-        text-align: center;
-        padding: 18px 0 10px 0;
-        font-family: sans-serif;
-    ">
-        <div style="
-            font-size: 13px;
-            letter-spacing: 2px;
-            color: #8A94A6;
-            margin-bottom: 10px;
-        ">
+    <div style="text-align: center; padding: 20px 0;">
+        <p style="color: #8A94A6; font-size: 12px;
+                  letter-spacing: 2px;">
             WORK SMARTER, NOT HARDER
-        </div>
-
-        <div style="
-            font-size: 19px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            color: #5B8DEF;
-        ">
+        </p>
+        <p style="color: #5B8DEF; font-size: 20px;
+                  font-weight: 600;">
             ♡ Lazy Developer
-        </div>
-
-        <div style="
-            font-size: 11px;
-            color: #9CA3AF;
-            margin-top: 10px;
-        ">
-            made with curiosity & a little ☕
-        </div>
+        </p>
+        <p style="color: #9CA3AF; font-size: 12px;">
+            made with curiosity &amp; a little ☕
+        </p>
     </div>
     """,
     unsafe_allow_html=True,
