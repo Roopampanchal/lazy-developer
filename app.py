@@ -1,8 +1,7 @@
-
 import json
-
 import requests
 import streamlit as st
+from datetime import date
 
 # ---------- PAGE CONFIG ----------
 
@@ -23,17 +22,14 @@ POSTS_URL = (
 
 # ---------- LOAD POSTS (READ ONLY) ----------
 
-@st.cache_data(ttl=60)
 def load_posts():
-    response = requests.get(POSTS_URL, timeout=15)
+    response = requests.get(
+        POSTS_URL,
+        params={"refresh": str(date.today())},
+        timeout=15,
+    )
     response.raise_for_status()
-
-    posts = response.json()
-
-    if not isinstance(posts, list):
-        raise ValueError("posts.json must contain a list of posts.")
-
-    return posts
+    return response.json()
 
 
 # ---------- WEBSITE HEADER ----------
