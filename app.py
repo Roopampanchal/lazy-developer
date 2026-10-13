@@ -74,7 +74,7 @@ st.subheader("📚 My Learning Journal")
 try:
     posts = load_posts()
 
-    st.write("DEBUG — Posts loaded:", len(posts))
+    # st.write("DEBUG — Posts loaded:", len(posts))
 
     # Newest dates first
     posts = sorted(
