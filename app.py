@@ -1,7 +1,7 @@
 import json
+import time
 import requests
 import streamlit as st
-from datetime import date
 
 # ---------- PAGE CONFIG ----------
 
@@ -37,7 +37,6 @@ def load_posts():
         raise ValueError("posts.json must contain a list.")
 
     return posts
-st.write("DEBUG — Posts loaded:", len(posts))
 
 # ---------- WEBSITE HEADER ----------
 
@@ -61,6 +60,8 @@ st.subheader("📚 My Learning Journal")
 
 try:
     posts = load_posts()
+
+    st.write("DEBUG — Posts loaded:", len(posts))
 
     # Newest dates first
     posts = sorted(
