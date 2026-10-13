@@ -1,12 +1,5 @@
 [
   {
-    "id": "780896f1-aac8-470a-870b-c470462076c4",
-    "title": "test",
-    "category": "Python",
-    "content": "test",
-    "date": "2026-10-13"
-  },
-  {
     "title": "Understanding Python Syntax and Basics",
     "category": "Python",
     "content": "1. Indentation:\nPython uses indentation (spaces or tabs) to define blocks of code.\n2. Whitespace:\nPython is sensitive to whitespace. Ensure consistent indentation to avoid errors. Ideally, use 4 spaces for indentation.\n3. Statements:\nEach line of code is a statement. You can write multiple statements on one line using a semicolon (; ), but this is not recommended.\n4. Comments: \n- Use  # for single-line comments.\n- Use  ''' or  \"\"\" for multi-line comments.",
