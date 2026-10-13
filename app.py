@@ -25,11 +25,18 @@ POSTS_URL = (
 def load_posts():
     response = requests.get(
         POSTS_URL,
-        params={"refresh": str(date.today())},
+        headers={"Cache-Control": "no-cache"},
         timeout=15,
     )
     response.raise_for_status()
-    return response.json()
+
+    posts = response.json()
+
+    if not isinstance(posts, list):
+        raise ValueError("posts.json must contain a list.")
+
+    return posts
+
 
 
 # ---------- WEBSITE HEADER ----------
