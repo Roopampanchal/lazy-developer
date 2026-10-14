@@ -1,5 +1,12 @@
 [
   {
+    "id": "e891f6ea-b9a7-4e05-9804-73f13008f838",
+    "title": "Lists, Tuples, Sets, and Loops 🐍",
+    "category": "Python",
+    "content": "1. List 📋\n\nA list is an ordered and mutable collection that allows duplicate values.\n\nfruits = [\"Apple\", \"Banana\", \"Mango\"]\nfruits.append(\"Orange\")\nprint(fruits)\n\nKey points:\n\nOrdered collection\n\nMutable (can be modified)\n\nAllows duplicate values\n\nSupports indexing and slicing\n\n2. Tuple 📦\n\nA tuple is an ordered and immutable collection that allows duplicate values.\n\ncolors = (\"Red\", \"Green\", \"Blue\")\nprint(colors[0])\n\nKey points:\n\nOrdered collection\n\nImmutable (cannot be modified after creation)\n\nAllows duplicate values\n\nSupports indexing and slicing\n\n3. Set 🔹\n\nA set is an unordered collection of unique elements.\n\nnumbers = {1, 2, 3, 2, 1}\nprint(numbers)  # {1, 2, 3}\n\nKey points:\n\nStores unique values only\n\nDoes not support indexing\n\nUseful for removing duplicates\n\nSupports union, intersection, and difference operations\n\n4. Loops 🔁\n\nLoops help us execute a block of code repeatedly.\n\nFor loop: Used to iterate over a sequence or other iterable.\n\nfruits = [\"Apple\", \"Banana\", \"Mango\"]\n\nfor fruit in fruits:\n    print(fruit)\n\nWhile loop: Repeats while a condition remains True.\n\ncount = 1\n\nwhile count <= 5:\n    print(count)\n    count += 1\n\nQuick Comparison\n\nFeature\n\nList\n\nTuple\n\nSet\n\nOrdered\n\nYes\n\nYes\n\nNo\n\nMutable\n\nYes\n\nNo\n\nYes\n\nDuplicates\n\nAllowed\n\nAllowed\n\nNot allowed\n\nIndexing\n\nYes\n\nYes\n\nNo\n\nMy Key Takeaway 💡\n\nUse a list when data needs to change.\n\nUse a tuple when you want an immutable sequence.\n\nUse a set when you need unique values.\n\nUse loops when you want to process items or repeat tasks efficiently.",
+    "date": "2026-10-14"
+  },
+  {
     "title": "Understanding Python Syntax and Basics",
     "category": "Python",
     "content": "1. Indentation:\nPython uses indentation (spaces or tabs) to define blocks of code.\n2. Whitespace:\nPython is sensitive to whitespace. Ensure consistent indentation to avoid errors. Ideally, use 4 spaces for indentation.\n3. Statements:\nEach line of code is a statement. You can write multiple statements on one line using a semicolon (; ), but this is not recommended.\n4. Comments: \n- Use  # for single-line comments.\n- Use  ''' or  \"\"\" for multi-line comments.",
